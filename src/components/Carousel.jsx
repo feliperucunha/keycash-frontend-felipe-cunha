@@ -15,7 +15,7 @@ function Carousel(data) {
     <Slider {...settings}>
       {data.images.map((image) => (
         <img
-          className="h-60 w-full object-cover group-hover:scale-105 transition-transform durantion-200 ease-in-out"
+          className={`${data.HouseDetailsPage && 'h-[40rem]'} w-full object-cover group-hover:scale-105 transition-transform durantion-200 ease-in-out`}
           src={image}
           alt={data.address.formattedAddress}
           key={data.id}

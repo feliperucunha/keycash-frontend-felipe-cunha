@@ -4,9 +4,11 @@ import Slider from "infinite-react-carousel";
 function Carousel(data) {
   const settings = {
     arrows: true,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     dots: true,
+    autoplay: data.HouseDetailsPage,
+    centerMode: data.HouseDetailsPage,
+    adaptiveHeight: data.HouseDetailsPage,
   };
 
   return (
@@ -17,6 +19,7 @@ function Carousel(data) {
           src={image}
           alt={data.address.formattedAddress}
           key={data.id}
+          onClick
         />
       ))}
     </Slider>

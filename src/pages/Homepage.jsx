@@ -4,7 +4,7 @@ import Loader from "../components/Loader";
 import Cards from "../components/Cards";
 import Header from "../components/Header";
 
-const Homepage = () => {
+function Homepage() {
   const { data } = useGetHousesQuery();
 
   if (!data) return <Loader />;

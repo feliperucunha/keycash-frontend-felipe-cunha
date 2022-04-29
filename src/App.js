@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components";
-import { Homepage } from "./pages";
+import { Homepage, HouseDetailsPage } from "./pages";
 import "./App.css";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <div className="routes">
           <Routes>
             <Route exact path="/" element={<Homepage />} />
-            <Route exact path="/houses/:houseId" element={<></>} />
+            <Route exact path="/houses/:houseId" element={<HouseDetailsPage />} />
           </Routes>
         </div>
       </div>

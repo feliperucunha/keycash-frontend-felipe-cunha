@@ -62,7 +62,9 @@
 
 ## To The Company [PT-BR]
 
-Achei bem interessante o projeto, deu pra fazer algo parecido com plataformas existentes com esses serviços e acho que ficou bonito. Componentizei da melhor forma que sei e tentei implementar o máximo de requisitos do readme enviado, no entanto, gostaria de informar que a API cadece dados e, como consequência, as melhores práticas não foram totalmente aplicadas, por exemplo: filtragem com grande quantidade de dados não se faz no frontend e, apesar de não ser o caso, seria interessante aprimorar a API para que as melhores práticas fossem aplicadas no projeto como um todo.
+Achei bem interessante o projeto, deu pra fazer algo parecido com plataformas existentes com esses serviços e acho que ficou bonito. Componentizei da melhor forma que sei e tentei implementar o máximo de requisitos do readme enviado, no entanto, gostaria de informar que a API cadece rotas e, como consequência, as melhores práticas não foram totalmente aplicadas, por exemplo: 
+  - Filtragem com grande quantidade de dados não se faz no frontend e, apesar de não ser o caso, seria interessante aprimorar a API para que as melhores práticas fossem aplicadas no projeto como um todo. 
+  - Também seria legal um link para busca de items por id para melhorar a performance para o usuário final. Da forma como está o fluxo de dados (home -> página de casa) seria melhor de pai pra filho, tornando o uso do redux praticamente irrelevante. Fiz como se existisse essa rota e filtrei os dados novamente na página de casa para seguir as melhores práticas, mas fica o adendo.
 
 
 
@@ -115,7 +117,6 @@ First of all you need the package manager NPM, to install it use the command bel
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->

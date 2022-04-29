@@ -60,6 +60,10 @@
   </ol>
 </details>
 
+## To The Company [PT-BR]
+
+Achei bem interessante o projeto, deu pra fazer algo parecido com plataformas existentes com esses serviços e acho que ficou bonito. Componentizei da melhor forma que sei e tentei implementar o máximo de requisitos do readme enviado, no entanto, gostaria de informar que a API cadece dados e, como consequência, as melhores práticas não foram totalmente aplicadas, por exemplo: filtragem com grande quantidade de dados não se faz no frontend e, apesar de não ser o caso, seria interessante aprimorar a API para que as melhores práticas fossem aplicadas no projeto como um todo.
+
 
 
 <!-- ABOUT THE PROJECT -->
@@ -77,9 +81,8 @@ This section should list any major frameworks/libraries used to build this proje
 
 * [React.js](https://reactjs.org/)
 * [Redux](https://redux.js.org/)
-* [Ant.Design](https://ant.design/)
-* [Moment.js](https://momentjs.com/)
-* [Chart.js](https://www.chartjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Infinite React Carousel](https://github.com/g787543/infinite-react-carousel)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

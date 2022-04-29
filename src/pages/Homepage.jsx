@@ -5,7 +5,7 @@ import Cards from "../components/Cards";
 import Header from "../components/Header";
 
 const Homepage = () => {
-  const { data } = useGetHousesQuery(10);
+  const { data } = useGetHousesQuery();
 
   if (!data) return <Loader />;
 

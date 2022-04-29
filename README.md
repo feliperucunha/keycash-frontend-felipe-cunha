@@ -24,7 +24,7 @@
     <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://keycash-frontend-felipe-cunha-iota.vercel.app">View Demo</a>
+    <a href="https://keycash-frontend-felipe-cunha.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha/issues">Report Bug</a>
     ·

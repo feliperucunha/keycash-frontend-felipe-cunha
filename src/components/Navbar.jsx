@@ -17,7 +17,7 @@ function Navbar(props) {
   });
 
   return (
-    <header className={`flex justify-between p-5 ${props.whiteBg ? '!bg-white' : 'bg-slate-100 border-y border-slate-400 sticky top-0 z-50'}`}>
+    <header className={`flex justify-between p-5 bg-slate-100 border-y border-slate-400 sticky top-0 z-50`}>
       <div className='flex items-center space-x-5'>
         <a href="/"> 
           <div className='flex object-contain items-center cursor-pointer'>

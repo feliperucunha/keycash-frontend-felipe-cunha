@@ -12,23 +12,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/feliperucunha/crypto-data">
-    <img src="src/images/cryptodata.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha">
+    <img src="./images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">CryptoData</h3>
+  <h3 align="center">Keycash Challanage</h3>
 
   <p align="center">
-    An awesome crypto dashboard to look for crypto data
+    An awesome dashboard to look for hourses
     <br />
-    <a href="https://github.com/feliperucunha/crypto-data"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://crypto-data-iota.vercel.app">View Demo</a>
+    <a href="https://keycash-frontend-felipe-cunha-iota.vercel.app">View Demo</a>
     ·
-    <a href="https://github.com/feliperucunha/crypto-data/issues">Report Bug</a>
+    <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha/issues">Report Bug</a>
     ·
-    <a href="https://github.com/feliperucunha/crypto-data/issues">Request Feature</a>
+    <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha/issues">Request Feature</a>
   </p>
 </div>
 
@@ -65,9 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are many crypto dashboards out there, but I wanted to build one of my own with actual
-functionality so this is the result. It can look for top cryptos, specific ones and show information about them.
-Also it has a news tab with some news about crypto brought by bing.
+TBD
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -102,10 +100,10 @@ First of all you need the package manager NPM, to install it use the command bel
 
 ### Installation
 
-1. Get a free API Key at [https://rapidapi.com](https://rapidapi.com) for CoinRanking and Bing Search
+<!-- 1. Get a free API Key at [https://rapidapi.com](https://rapidapi.com) for CoinRanking and Bing Search
 2. Clone the repo
    ```sh
-   git clone https://github.com/feliperucunha/crypto-data.git
+   git clone https://github.com/feliperucunha/keycash-frontend-felipe-cunha.git
    ```
 3. Install NPM packages
    ```sh
@@ -118,7 +116,7 @@ First of all you need the package manager NPM, to install it use the command bel
    REACT_APP_NEWS_API_URL = 'ENTER YOUR API'
    REACT_APP_NEWS_RAPIDAPI_HOST = 'ENTER YOUR API'
    REACT_APP_CRYPTO_RAPIDAPI_HOST = 'ENTER YOUR API'
-   ```
+   ``` -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -127,9 +125,7 @@ First of all you need the package manager NPM, to install it use the command bel
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The home page has some top information about coins and some news.
-This dashboard is pretty straight forward. You can access anything through the navbar and click on any card
-to see the specific details about a coin. You can also check the news on the news tab.
+TBD
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -147,7 +143,7 @@ to see the specific details about a coin. You can also check the news on the new
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/feliperucunha/crypto-data/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/feliperucunha/keycash-frontend-felipe-cunha/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
@@ -220,16 +216,16 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/feliperucunha/crypto-data.svg?style=for-the-badge
-[contributors-url]: https://github.com/feliperucunha/crypto-data/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/feliperucunha/crypto-data.svg?style=for-the-badge
-[forks-url]: https://github.com/feliperucunha/crypto-data/network/members
-[stars-shield]: https://img.shields.io/github/stars/feliperucunha/crypto-data.svg?style=for-the-badge
-[stars-url]: https://github.com/feliperucunha/crypto-data/stargazers
-[issues-shield]: https://img.shields.io/github/issues/feliperucunha/crypto-data.svg?style=for-the-badge
-[issues-url]: https://github.com/feliperucunha/crypto-data/issues
-[license-shield]: https://img.shields.io/github/license/feliperucunha/crypto-data.svg?style=for-the-badge
-[license-url]: https://github.com/feliperucunha/crypto-data/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
+[contributors-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
+[forks-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/network/members
+[stars-shield]: https://img.shields.io/github/stars/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
+[stars-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/stargazers
+[issues-shield]: https://img.shields.io/github/issues/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
+[issues-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/issues
+[license-shield]: https://img.shields.io/github/license/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
+[license-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [product-screenshot]: images/screenshot.png
 

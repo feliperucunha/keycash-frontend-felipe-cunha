@@ -16,10 +16,10 @@
     <img src="public/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Keycash Challanage</h3>
+  <h3 align="center">Keycash Challange</h3>
 
   <p align="center">
-    An awesome dashboard to look for hourses
+    An awesome dashboard to look for houses
     <br />
     <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha"><strong>Explore the docs »</strong></a>
     <br />

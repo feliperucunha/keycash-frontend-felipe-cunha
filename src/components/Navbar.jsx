@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function Header(props) {
+function Navbar(props) {
   const [navbarColor, setNavbarColor] = useState(false);
 
   const changeBackgroundColor = () => {
@@ -17,7 +17,7 @@ function Header(props) {
   });
 
   return (
-    <header className={`${navbarColor ? '!bg-white ' : 'bg-slate-200 '}flex justify-between p-5 max-w-7xl mx-auto ${props.whiteBg ? '!bg-white' : 'bg-yellow-500 border-y border-black sticky top-0 z-50'}`}>
+    <header className={`flex justify-between p-5 ${props.whiteBg ? '!bg-white' : 'bg-slate-100 border-y border-slate-400 sticky top-0 z-50'}`}>
       <div className='flex items-center space-x-5'>
         <a href="/"> 
           <div className='flex object-contain items-center cursor-pointer'>
@@ -42,4 +42,4 @@ function Header(props) {
   )
 }
 
-export default Header
+export default Navbar

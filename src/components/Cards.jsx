@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Posts({ posts }) {
+function Posts({ apiData }) {
+  console.log(apiData)
   return (
     <></>
     // <>

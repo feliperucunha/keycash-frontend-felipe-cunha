@@ -7,9 +7,8 @@ import './App.css';
 const App = () => {
   return (
     <div className='app'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto sticky z-50 top-0'>
         <Navbar />
-        <Header />
       </div>
       <div className='main'>
         <div className='routes'>

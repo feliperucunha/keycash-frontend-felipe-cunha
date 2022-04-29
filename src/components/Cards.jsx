@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Slider from "infinite-react-carousel";
+import Carousel from "./Carousel";
+import { currencyFormat } from "../utils/currency";
 
 function apiDatas({ apiData }) {
   const filteredApiData = apiData.filter((item) => {
@@ -11,36 +12,14 @@ function apiDatas({ apiData }) {
     );
   });
 
-  const settings = {
-    arrows: true,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    dots: true,
-  };
-
   if (!apiData) return;
-
-  const currencyFormat = (value) =>
-    new Intl.NumberFormat("pt-br", {
-      style: "currency",
-      currency: "BRL",
-    }).format(value);
 
   return (
     <>
       {filteredApiData.map((item) => (
         <Link key={item.id} to={`/houses/${item.id}`}>
           <div className="group cursor-pointer border rounded-lg overflow-hidden">
-            <Slider {...settings}>
-              {item.images.map((image) => (
-                <img
-                  className="h-60 w-full object-cover group-hover:scale-105 transition-transform durantion-200 ease-in-out"
-                  src={image}
-                  alt={item.address.formattedAddress}
-                  key={item.id}
-                />
-              ))}
-            </Slider>
+            <Carousel {...item} />
 
             <div className="flex justify-between p-5 bg-white">
               <div>

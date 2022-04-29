@@ -65,7 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-TBD
+This project uses the company's API to fetch data about the houses and is currently showing them filtered by some flags and also removing the ones which lack geolocation data. You can click a card on the home page to be taken to the page with the specific data about the house you've just clicked.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -100,23 +100,16 @@ First of all you need the package manager NPM, to install it use the command bel
 
 ### Installation
 
-<!-- 1. Get a free API Key at [https://rapidapi.com](https://rapidapi.com) for CoinRanking and Bing Search
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/feliperucunha/keycash-frontend-felipe-cunha.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `.env`
-   ```js
-   REACT_APP_RAPIDAPI_KEY = 'ENTER YOUR API'
-   REACT_APP_CRYPTO_API_URL = 'ENTER YOUR API'
-   REACT_APP_NEWS_API_URL = 'ENTER YOUR API'
-   REACT_APP_NEWS_RAPIDAPI_HOST = 'ENTER YOUR API'
-   REACT_APP_CRYPTO_RAPIDAPI_HOST = 'ENTER YOUR API'
-   ``` -->
+3. Access localhost:3000
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
 import { currencyFormat } from "../utils/currency";
+import { createBedroomsString } from "../utils/bedrooms";
 
 function apiDatas({ apiData }) {
   const filteredApiData = apiData.filter((item) => {
@@ -23,7 +24,7 @@ function apiDatas({ apiData }) {
 
             <div className="flex justify-between p-5 bg-white">
               <div>
-                <p className="text-lg font-bold">Localização</p>
+                <p className="text-lg font-bold">{createBedroomsString(item.bedrooms)}</p>
                 <p className="text-sm font-light">
                   {item.address.formattedAddress}
                 </p>

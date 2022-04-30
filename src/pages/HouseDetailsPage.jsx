@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetHousesQuery } from "../services/housesApi";
+import { createBedroomsString } from "../utils/bedrooms";
 import Carousel from "../components/Carousel";
 import Loader from "../components/Loader";
 import { currencyFormat } from "../utils/currency";
@@ -22,7 +23,7 @@ function HouseDetailsPage() {
   return (
     <div className="max-w-7xl mx-auto bg-slate-100">
       <div className="flex justify-between p-10 text-3xl">
-        <h1 className="hover:scale-110 transition-transform durantion-200 ease-in-out">Imóvel com {filteredApiData[0].bedrooms} quartos</h1>
+        <h1 className="hover:scale-110 transition-transform durantion-200 ease-in-out">{createBedroomsString(filteredApiData[0].bedrooms)}</h1>
         <h1 className="text-[#ff0094] font-bold hover:scale-110 transition-transform durantion-200 ease-in-out">
           {currencyFormat(filteredApiData[0].price)}
         </h1>

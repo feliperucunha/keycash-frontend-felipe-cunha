@@ -8,8 +8,7 @@ import { RiCarLine } from "react-icons/ri";
 import { GrRestroom } from "react-icons/gr";
 import { BiArea } from "react-icons/bi";
 import { SiGooglemaps } from "react-icons/si";
-import Carousel from "../components/Carousel";
-import Loader from "../components/Loader";
+import { Carousel, Loader } from "../components";
 
 function HouseDetailsPage() {
   const { houseId } = useParams();

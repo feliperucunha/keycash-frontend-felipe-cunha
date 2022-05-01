@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "infinite-react-carousel";
 
 function Carousel(data) {
-
   const settings = {
     arrows: true,
     autoplaySpeed: 3500,
@@ -10,7 +9,7 @@ function Carousel(data) {
     autoplay: data.HouseDetailsPage,
     centerMode: data.HouseDetailsPage,
     adaptiveHeight: data.HouseDetailsPage,
-    slidesPerRow: data.HouseDetailsPage ? 2 : 1
+    slidesPerRow: data.HouseDetailsPage ? 2 : 1,
   };
 
   return (

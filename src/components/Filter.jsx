@@ -9,7 +9,7 @@ function Filter({ filter, setFilter }) {
     <select
       className="border-[#ff0094] border-2 p-2 rounded-md"
       onChange={handleChange}
-      defaultValue={filter || '0'}
+      defaultValue={filter || "0"}
     >
       <option tabIndex="0" value="0" ariallabel="Preço">
         Preço

@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useGetHousesQuery } from "../services/housesApi";
-import Loader from "../components/Loader";
-import Cards from "../components/Cards";
-import Header from "../components/Header";
-import Filter from "../components/Filter";
+import { Loader, Cards, Header, Filter } from "../components";
 
 function Homepage() {
   const { data } = useGetHousesQuery();

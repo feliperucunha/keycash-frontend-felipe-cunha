@@ -24,8 +24,8 @@ function Header() {
       </div>
       <img
         className="w-80 hidden md:inline-flex"
-        src='./images/logo.png'
-        alt='logo'
+        src="./images/logo.png"
+        alt="logo"
       />
     </div>
   );

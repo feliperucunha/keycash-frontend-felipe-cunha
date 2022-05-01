@@ -7,8 +7,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -31,8 +29,6 @@
     <a href="https://github.com/feliperucunha/keycash-frontend-felipe-cunha/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -62,56 +58,62 @@
 
 ## To The Company [PT-BR]
 
-Achei bem interessante o projeto, deu pra fazer algo parecido com plataformas existentes com esses serviços e acho que ficou bonito. Componentizei da melhor forma que sei e tentei implementar o máximo de requisitos do readme enviado, no entanto, gostaria de informar que a API cadece rotas e, como consequência, as melhores práticas não foram totalmente aplicadas, por exemplo: 
-  - Filtragem com grande quantidade de dados não se faz no frontend e, apesar de não ser o caso, seria interessante aprimorar a API para que as melhores práticas fossem aplicadas no projeto como um todo. 
-  - Também seria legal um link para busca de items por id para melhorar a performance para o usuário final. Da forma como está o fluxo de dados (home -> página de casa) seria melhor de pai pra filho, tornando o uso do redux praticamente irrelevante. Fiz como se existisse essa rota e filtrei os dados novamente na página de casa para seguir as melhores práticas, mas fica o adendo.
+Achei bem interessante o projeto, deu pra fazer algo parecido com plataformas existentes com esses serviços e acho que ficou bonito. Componentizei da melhor forma que sei e tentei implementar o máximo de requisitos do readme enviado, no entanto, gostaria de informar que a API cadece rotas e, como consequência, as melhores práticas não foram totalmente aplicadas, por exemplo:
 
-  ### Itens implementados 
-  - [x] Página inicial
-    - [x] Navbar 
-    - [x] Card com ideia da empresa (escolha estética minha)
-    - [x] Filtro de categorias
-    - [x] Filtro de itens a serem mostrados
-    - [x] Começa ativo com o filtro de preço
-    - [x] Itens sem os dados de endereço e com publish: false não aparecem
-    - [ ] Paginação ficou pela <strong>metade</strong>, então deixei comentado no código
-  - [x] Página de detalhes
-    - [x] Navbar
-    - [x] Título
-    - [x] Link para a localização
-    - [x] Carrossel de imagens
-    - [x] Outros detalhes do imóvel
+- Filtragem com grande quantidade de dados não se faz no frontend e, apesar de não ser o caso, seria interessante aprimorar a API para que as melhores práticas fossem aplicadas no projeto como um todo.
+- Também seria legal um link para busca de items por id para melhorar a performance para o usuário final. Da forma como está o fluxo de dados (home -> página de casa) seria melhor de pai pra filho, tornando o uso do redux praticamente irrelevante. Fiz como se existisse essa rota e filtrei os dados novamente na página de casa para seguir as melhores práticas, mas fica o adendo.
 
-  - [x] Responsividade total
-  - [x] Abordagem Mobile First
-  - [x] Flux implementado para a chamada
-  - [x] Deploy no Vercel
+### Itens implementados
 
+- [x] Página inicial
+  - [x] Navbar
+  - [x] Card com ideia da empresa (escolha estética minha)
+  - [x] Filtro de categorias
+  - [x] Filtro de itens a serem mostrados
+  - [x] Começa ativo com o filtro de preço
+  - [x] Itens sem os dados de endereço e com publish: false não aparecem
+  - [ ] Paginação ficou pela <strong>metade</strong>, então deixei comentado no código
+- [x] Página de detalhes
 
+  - [x] Navbar
+  - [x] Título
+  - [x] Link para a localização
+  - [x] Carrossel de imagens
+  - [x] Outros detalhes do imóvel
+
+- [x] Loader implementado
+- [x] Abordagem de locales utilizada (atualmente só com variáveis em pt-br)
+- [x] Código todo em Inglês
+- [x] Componentização
+- [x] Organização/Arquitetura: components, fonts, locales, pages, redux, services e utils
+- [x] Responsividade total
+- [x] Abordagem Mobile First
+- [x] Flux implementado para a chamada
+- [x] Código auto explicativo
+- [x] Sem erros e avisos no console
+- [x] Deploy no Vercel
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 This project uses the company's API to fetch data about the houses and is currently showing them filtered by some flags and also removing the ones which lack geolocation data. You can click a card on the home page to be taken to the page with the specific data about the house you've just clicked.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 ### Built With
 
 This section should list any major frameworks/libraries used to build this project.
 
-* [React.js](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Infinite React Carousel](https://github.com/g787543/infinite-react-carousel)
+- [React.js](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Infinite React Carousel](https://github.com/g787543/infinite-react-carousel)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -119,7 +121,8 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 First of all you need the package manager NPM, to install it use the command below:
-* npm
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -136,19 +139,15 @@ First of all you need the package manager NPM, to install it use the command bel
    ```
 3. Access localhost:3000
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 TBD
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 <!-- ## Roadmap
@@ -165,9 +164,8 @@ See the [open issues](https://github.com/feliperucunha/keycash-frontend-felipe-c
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -183,9 +181,8 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -208,11 +205,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [<img align="left" alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
 [<img align="left" alt="Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />][telegram]
 [<img align="left" alt="Whatsapp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />][whatsapp]
-[<img align="left" alt="Instagram" src="https://img.shields.io/badge/<feliperucunha>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />][instagram] 
+[<img align="left" alt="Instagram" src="https://img.shields.io/badge/<feliperucunha>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />][instagram]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 <!-- ## Acknowledgments
@@ -230,10 +225,9 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
 [contributors-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/feliperucunha/keycash-frontend-felipe-cunha.svg?style=for-the-badge
@@ -246,7 +240,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/feliperucunha/keycash-frontend-felipe-cunha/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [product-screenshot]: images/screenshot.png
-
 [whatsapp]: https://wa.me/5591987485395
 [telegram]: https://t.me/Felipecunha04
 [twitter]: https://twitter.com/feliperubeen

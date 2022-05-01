@@ -19,16 +19,24 @@ function Homepage() {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    if (data && data.length > 0) {
-      filtersUtils(filter, data, setFilteredData);
-    }
+    const filterData = () => {
+      if (data && data.length > 0) {
+        filtersUtils(filter, data, setFilteredData);
+      }
+    };
+
+    filterData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter, data]);
 
   useEffect(() => {
-    if (filteredData && filteredData.length > 0) {
-      paginationUtils(pagination, setSlicedData, filteredData, showAll);
-    }
+    const paginateData = () => {
+      if (filteredData && filteredData.length > 0) {
+        paginationUtils(pagination, setSlicedData, filteredData, showAll);
+      }
+    };
+
+    paginateData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filteredData, pagination, showAll]);
 

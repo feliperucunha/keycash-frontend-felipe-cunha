@@ -1,8 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetHousesQuery } from "../services/housesApi";
-import { createBedroomsString } from "../utils/bedrooms";
-import { currencyFormat } from "../utils/currency";
+import { currencyUtils, bedroomsUtils } from "../utils";
 import { AiOutlinePushpin } from "react-icons/ai";
 import { RiCarLine } from "react-icons/ri";
 import { GrRestroom } from "react-icons/gr";
@@ -32,10 +31,10 @@ function HouseDetailsPage() {
       <div className="p-10">
         <div className="flex justify-between text-3xl">
           <h1 className="hover:scale-110 transition-transform durantion-200 ease-in-out">
-            {createBedroomsString(filteredApiData[0].bedrooms)}
+            {bedroomsUtils(filteredApiData[0].bedrooms)}
           </h1>
           <h1 className="text-[#ff0094] font-bold hover:scale-110 transition-transform durantion-200 ease-in-out">
-            {currencyFormat(filteredApiData[0].price)}
+            {currencyUtils(filteredApiData[0].price)}
           </h1>
         </div>
         <div className="w-80">

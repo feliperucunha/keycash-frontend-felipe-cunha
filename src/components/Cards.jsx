@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
-import { currencyFormat } from "../utils/currency";
-import { createBedroomsString } from "../utils/bedrooms";
+import { currencyUtils, bedroomsUtils } from "../utils";
+
 
 function Cards({ apiData }) {
   if (!apiData) return <></>;
@@ -25,7 +25,7 @@ function Cards({ apiData }) {
             <div className="flex justify-between p-5 bg-white">
               <div>
                 <p className="text-lg font-bold">
-                  {createBedroomsString(item.bedrooms)}
+                  {bedroomsUtils(item.bedrooms)}
                 </p>
                 <p className="text-sm font-light">
                   {item.address.formattedAddress}
@@ -39,7 +39,7 @@ function Cards({ apiData }) {
             </div>
             <div className="p-5 pt-0">
               <span className="text-rose-400">
-                {currencyFormat(item.price)}
+                {currencyUtils(item.price)}
               </span>
             </div>
           </div>

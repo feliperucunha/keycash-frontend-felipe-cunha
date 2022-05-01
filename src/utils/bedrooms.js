@@ -4,7 +4,7 @@ import {
   secondPluralText,
 } from "../locales/pt-br";
 
-export const createBedroomsString = (bedrooms) => {
+const createBedroomsString = (bedrooms) => {
   if (bedrooms === 1)
     return (
       <>
@@ -18,3 +18,5 @@ export const createBedroomsString = (bedrooms) => {
       </>
     );
 };
+
+export default createBedroomsString;

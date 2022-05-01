@@ -24,6 +24,14 @@ export const firstText = "Imóvel com";
 export const secondSingularText = "quarto";
 export const secondPluralText = "quartos";
 
+//Pagination
+export const itemsText = "Itens";
+export const ofText = "de";
+export const showingText = "Mostrando";
+export const resultsText = "Resultados";
+export const previousText = "Anterior";
+export const nextText = "Próximo";
+
 //House Details Page
 export const googleText = "Verifica a localização pelo Google Maps";
 export const addressText = "Endereço: ";

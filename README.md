@@ -66,6 +66,27 @@ Achei bem interessante o projeto, deu pra fazer algo parecido com plataformas ex
   - Filtragem com grande quantidade de dados não se faz no frontend e, apesar de não ser o caso, seria interessante aprimorar a API para que as melhores práticas fossem aplicadas no projeto como um todo. 
   - Também seria legal um link para busca de items por id para melhorar a performance para o usuário final. Da forma como está o fluxo de dados (home -> página de casa) seria melhor de pai pra filho, tornando o uso do redux praticamente irrelevante. Fiz como se existisse essa rota e filtrei os dados novamente na página de casa para seguir as melhores práticas, mas fica o adendo.
 
+  ### Itens implementados 
+  - [x] Página inicial
+    - [x] Navbar 
+    - [x] Card com ideia da empresa (escolha estética minha)
+    - [x] Filtro de categorias
+    - [x] Filtro de itens a serem mostrados
+    - [x] Começa ativo com o filtro de preço
+    - [x] Itens sem os dados de endereço e com publish: false não aparecem
+    - [ ] Paginação ficou pela <strong>metade</strong>, então deixei comentado no código
+  - [x] Página de detalhes
+    - [x] Navbar
+    - [x] Título
+    - [x] Link para a localização
+    - [x] Carrossel de imagens
+    - [x] Outros detalhes do imóvel
+
+  - [x] Responsividade total
+  - [x] Abordagem Mobile First
+  - [x] Flux implementado para a chamada
+  - [x] Deploy no Vercel
+
 
 
 <!-- ABOUT THE PROJECT -->

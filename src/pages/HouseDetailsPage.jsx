@@ -2,13 +2,14 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetHousesQuery } from "../services/housesApi";
 import { createBedroomsString } from "../utils/bedrooms";
-import Carousel from "../components/Carousel";
-import Loader from "../components/Loader";
 import { currencyFormat } from "../utils/currency";
 import { AiOutlinePushpin } from "react-icons/ai";
 import { RiCarLine } from "react-icons/ri";
 import { GrRestroom } from "react-icons/gr";
 import { BiArea } from "react-icons/bi";
+import { SiGooglemaps } from "react-icons/si";
+import Carousel from "../components/Carousel";
+import Loader from "../components/Loader";
 
 function HouseDetailsPage() {
   const { houseId } = useParams();
@@ -22,17 +23,31 @@ function HouseDetailsPage() {
 
   return (
     <div className="max-w-7xl mx-auto bg-slate-100">
-      <div className="flex justify-between p-10 text-3xl">
-        <h1 className="hover:scale-110 transition-transform durantion-200 ease-in-out">{createBedroomsString(filteredApiData[0].bedrooms)}</h1>
-        <h1 className="text-[#ff0094] font-bold hover:scale-110 transition-transform durantion-200 ease-in-out">
-          {currencyFormat(filteredApiData[0].price)}
-        </h1>
+      <div className="p-10">
+        <div className="flex justify-between text-3xl">
+          <h1 className="hover:scale-110 transition-transform durantion-200 ease-in-out">
+            {createBedroomsString(filteredApiData[0].bedrooms)}
+          </h1>
+          <h1 className="text-[#ff0094] font-bold hover:scale-110 transition-transform durantion-200 ease-in-out">
+            {currencyFormat(filteredApiData[0].price)}
+          </h1>
+        </div>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href={`https://www.google.com.br/maps/@${filteredApiData[0].address.geolocation.lat},${filteredApiData[0].address.geolocation.lng},15z`}
+        >
+          <span className="text-blue-500 flex items-center cursor-pointer pt-1">
+            <SiGooglemaps className="mr-1" /> Verifique a localização pelo
+            Google Maps
+          </span>
+        </a>
       </div>
       <div className="p-5 rounded-lg">
         <Carousel HouseDetailsPage {...filteredApiData[0]} />
       </div>
 
-      <hr className="my-2 border" />
+      <hr className="my-3 w-20 ml-8 border-2 border-[#ff0094]" />
 
       <div className="flex flex-col p-10 mx-auto text-2xl justify-between">
         <div className="">
@@ -52,7 +67,9 @@ function HouseDetailsPage() {
         <div className="">
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <GrRestroom />{" "}
-            <span className="pl-3">Banheiros: {filteredApiData[0].bathrooms}</span>
+            <span className="pl-3">
+              Banheiros: {filteredApiData[0].bathrooms}
+            </span>
           </p>
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <BiArea />{" "}

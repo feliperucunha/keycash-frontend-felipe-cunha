@@ -7,7 +7,7 @@ function Filter({ filter, setFilter }) {
 
   return (
     <select
-      className="border-red-200 border-2 p-2 rounded-md"
+      className="border-[#ff0094] border-2 p-2 rounded-md"
       onChange={handleChange}
       defaultValue={filter || '0'}
     >

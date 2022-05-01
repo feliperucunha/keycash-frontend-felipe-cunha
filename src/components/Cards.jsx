@@ -4,7 +4,9 @@ import Carousel from "./Carousel";
 import { currencyFormat } from "../utils/currency";
 import { createBedroomsString } from "../utils/bedrooms";
 
-function apiDatas({ apiData }) {
+function Cards({ apiData }) {
+  if (!apiData) return <></>;
+
   const filteredApiData = apiData.filter((item) => {
     return (
       item.publish === true &&
@@ -12,8 +14,6 @@ function apiDatas({ apiData }) {
       item.address.geolocation.lng
     );
   });
-
-  if (!apiData) return;
 
   return (
     <>
@@ -24,7 +24,9 @@ function apiDatas({ apiData }) {
 
             <div className="flex justify-between p-5 bg-white">
               <div>
-                <p className="text-lg font-bold">{createBedroomsString(item.bedrooms)}</p>
+                <p className="text-lg font-bold">
+                  {createBedroomsString(item.bedrooms)}
+                </p>
                 <p className="text-sm font-light">
                   {item.address.formattedAddress}
                 </p>
@@ -47,4 +49,4 @@ function apiDatas({ apiData }) {
   );
 }
 
-export default apiDatas;
+export default Cards;

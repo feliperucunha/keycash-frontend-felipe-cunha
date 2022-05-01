@@ -1,4 +1,11 @@
 import React, { useEffect, useState } from "react";
+import {
+  solutionsText,
+  blogText,
+  contactText,
+  helpText,
+  partnerText,
+} from "../locales/pt-br";
 
 function Navbar(props) {
   const [navbarColor, setNavbarColor] = useState(false);
@@ -31,11 +38,11 @@ function Navbar(props) {
       </div>
       <div className="flex items-center space-x-5 text-black">
         <div className="hidden md:inline-flex items-center space-x-5 font-extralight">
-          <span className="cursor-pointer">Soluções</span>
-          <span className="cursor-pointer">Blog</span>
-          <span className="cursor-pointer">Contato</span>
-          <span className="cursor-pointer">Seja Parceiro</span>
-          <span className="cursor-pointer">Ajuda</span>
+          <span className="cursor-pointer">{solutionsText}</span>
+          <span className="cursor-pointer">{blogText}</span>
+          <span className="cursor-pointer">{contactText}</span>
+          <span className="cursor-pointer">{helpText}</span>
+          <span className="cursor-pointer">{partnerText}</span>
         </div>
       </div>
     </header>

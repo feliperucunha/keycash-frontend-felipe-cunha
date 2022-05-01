@@ -9,6 +9,13 @@ import { GrRestroom } from "react-icons/gr";
 import { BiArea } from "react-icons/bi";
 import { SiGooglemaps } from "react-icons/si";
 import { Carousel, Loader } from "../components";
+import {
+  googleText,
+  addressText,
+  garageText,
+  bathroomsText,
+  areaText,
+} from "../locales/pt-br";
 
 function HouseDetailsPage() {
   const { houseId } = useParams();
@@ -31,16 +38,18 @@ function HouseDetailsPage() {
             {currencyFormat(filteredApiData[0].price)}
           </h1>
         </div>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href={`https://www.google.com.br/maps/@${filteredApiData[0].address.geolocation.lat},${filteredApiData[0].address.geolocation.lng},15z`}
-        >
-          <span className="text-blue-500 flex items-center cursor-pointer pt-1">
-            <SiGooglemaps className="mr-1" /> Verifique a localização pelo
-            Google Maps
-          </span>
-        </a>
+        <div className="w-80">
+          <a
+            className="cursor-pointer"
+            rel="noreferrer"
+            target="_blank"
+            href={`https://www.google.com.br/maps/@${filteredApiData[0].address.geolocation.lat},${filteredApiData[0].address.geolocation.lng},15z`}
+          >
+            <span className="text-blue-500 flex items-center pt-1">
+              <SiGooglemaps className="mr-1" /> {googleText}
+            </span>
+          </a>
+        </div>
       </div>
       <div className="p-5 rounded-lg">
         <Carousel HouseDetailsPage {...filteredApiData[0]} />
@@ -53,13 +62,15 @@ function HouseDetailsPage() {
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <AiOutlinePushpin />{" "}
             <span className="pl-3">
-              Endereço: {filteredApiData[0].address.formattedAddress}
+              {addressText}
+              {filteredApiData[0].address.formattedAddress}
             </span>
           </p>
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <RiCarLine />{" "}
             <span className="pl-3">
-              Vagas de Garagem: {filteredApiData[0].parkingSpaces}
+              {garageText}
+              {filteredApiData[0].parkingSpaces}
             </span>
           </p>
         </div>
@@ -67,13 +78,15 @@ function HouseDetailsPage() {
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <GrRestroom />{" "}
             <span className="pl-3">
-              Banheiros: {filteredApiData[0].bathrooms}
+              {bathroomsText}
+              {filteredApiData[0].bathrooms}
             </span>
           </p>
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <BiArea />{" "}
             <span className="pl-3">
-              Área Útil: {filteredApiData[0].usableArea}
+              {areaText}
+              {filteredApiData[0].usableArea}
             </span>
           </p>
         </div>

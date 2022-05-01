@@ -1,4 +1,5 @@
 import React from "react";
+import { areaFilterText, priceFilterText, garageFilterText, bedroomsFilterText, bathroomsFilterText } from '../locales/pt-br'
 
 function Filter({ filter, setFilter }) {
   const handleChange = (e) => {
@@ -12,19 +13,19 @@ function Filter({ filter, setFilter }) {
       defaultValue={filter || "0"}
     >
       <option tabIndex="0" value="0" ariallabel="Preço">
-        Preço
+        {priceFilterText}
       </option>
       <option tabIndex="0" value="1" ariallabel="Área Útil">
-        Área Útil
+        {areaFilterText}
       </option>
       <option tabIndex="0" value="2" ariallabel="Vagas de Garagem">
-        Vagas de Garagem
+        {garageFilterText}
       </option>
       <option tabIndex="0" value="3" ariallabel="Banheiros">
-        Banheiros
+        {bathroomsFilterText}
       </option>
       <option tabIndex="0" value="4" ariallabel="Dormitórios">
-        Dormitórios
+        {bedroomsFilterText}
       </option>
     </select>
   );

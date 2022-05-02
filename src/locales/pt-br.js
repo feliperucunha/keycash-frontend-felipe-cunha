@@ -33,7 +33,7 @@ export const previousText = "Anterior";
 export const nextText = "Próximo";
 
 //House Details Page
-export const googleText = "Verifica a localização pelo Google Maps";
+export const googleText = "Verificar a localização pelo Google Maps";
 export const addressText = "Endereço: ";
 export const garageText = "Vagas de Garagem: ";
 export const bathroomsText = "Banheiros: ";

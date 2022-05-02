@@ -51,7 +51,7 @@ function Homepage() {
     <>
       <div className="max-w-7xl mx-auto">
         <Header />
-        <div className="flex p-5 justify-between">
+        <div className="flex p-5 flex-col space-y-2 md:justify-between md:flex-row md:space-y-0">
           <Filter setFilter={setFilter} filter={filter} />
           <PaginationFilter
             setPagination={setPagination}

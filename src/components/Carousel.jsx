@@ -9,7 +9,7 @@ function Carousel(data) {
     autoplay: data.HouseDetailsPage,
     centerMode: data.HouseDetailsPage,
     adaptiveHeight: data.HouseDetailsPage,
-    slidesPerRow: data.HouseDetailsPage ? 2 : 1,
+    slidesPerRow: 1,
   };
 
   return (
@@ -17,7 +17,7 @@ function Carousel(data) {
       {data.images.map((image) => (
         <img
           className={`${
-            data.HouseDetailsPage && "h-[30rem]"
+            data.HouseDetailsPage && "h-[18rem] md:h-[30rem] "
           } w-full object-cover group-hover:scale-105 transition-transform durantion-200 ease-in-out`}
           src={image}
           alt={data.address.formattedAddress}

@@ -28,8 +28,8 @@ function HouseDetailsPage() {
 
   return (
     <div className="max-w-7xl mx-auto bg-slate-100">
-      <div className="p-10">
-        <div className="flex justify-between text-3xl">
+      <div className="p-10 flex flex-col items-center md:flex-row md:block">
+        <div className="flex flex-col items-center md:justify-between md:flex-row text-2xl md:text-3xl">
           <h1 className="hover:scale-110 transition-transform durantion-200 ease-in-out">
             {bedroomsUtils(filteredApiData[0].bedrooms)}
           </h1>
@@ -56,18 +56,18 @@ function HouseDetailsPage() {
 
       <hr className="my-3 w-20 ml-8 border-2 border-[#ff0094]" />
 
-      <div className="flex flex-col p-10 mx-auto text-2xl justify-between">
+      <div className="flex flex-col p-10 mx-auto md:text-2xl justify-between">
         <div className="">
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <AiOutlinePushpin />{" "}
-            <span className="pl-3">
+            <span className="pl-2">
               {addressText}
               {filteredApiData[0].address.formattedAddress}
             </span>
           </p>
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <RiCarLine />{" "}
-            <span className="pl-3">
+            <span className="pl-2">
               {garageText}
               {filteredApiData[0].parkingSpaces}
             </span>
@@ -76,14 +76,14 @@ function HouseDetailsPage() {
         <div className="">
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <GrRestroom />{" "}
-            <span className="pl-3">
+            <span className="pl-2">
               {bathroomsText}
               {filteredApiData[0].bathrooms}
             </span>
           </p>
           <p className="flex items-center p-4 border-b hover:bg-white rounded-xl">
             <BiArea />{" "}
-            <span className="pl-3">
+            <span className="pl-2">
               {areaText}
               {filteredApiData[0].usableArea}
             </span>
